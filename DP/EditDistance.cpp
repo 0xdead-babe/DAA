@@ -13,10 +13,10 @@ int editDistance(string x, string y, int xLength, int yLength)
     // yLength number of insertion required
 
     if (xLength == 0)
-        return DP[xLength][yLength] = yLength;
+        return yLength;
     // yLength number of deletion required
     if (yLength == 0)
-        return DP[xLength][yLength] = xLength;
+        return  xLength;
 
     if (DP[xLength][yLength] != -1)
         return DP[xLength][yLength];
